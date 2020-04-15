@@ -33,7 +33,7 @@ void loop() {
     Serial.print(SECS_ACTIVE);
     Serial.print("\n");
     digitalWrite(VALVE_PIN, HIGH);
-    digitalWrite(LED_PIN, LOW);    
+    digitalWrite(LED_PIN, HIGH);    
     start_time = millis();
     while (millis() < start_time + (SECS_ACTIVE*1000)) {
       //Pure delay, this space used for debug
