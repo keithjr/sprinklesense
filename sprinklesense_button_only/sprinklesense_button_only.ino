@@ -25,7 +25,6 @@ void setup() {
 void loop() {
   // read the state of the pushbutton value:
   button_state = digitalRead(BUTTON_PIN);
-  //FIXME need to worry about debounce?
   // check if the pushbutton is pressed
   if ((button_state == HIGH) && (prev_button_state == LOW)) {
     Serial.print("Button push detected\n");
